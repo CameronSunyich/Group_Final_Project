@@ -11,10 +11,10 @@ By looking at artists who have released songs over multiple decades, we plan on 
 Using unsupervised modeling techniques, we are going to examine clusters of song features by decade to evaluate if songs have become more similar or less similar over time.  
 
 ### Reason for Selecting Topic
-Nearly everybody enjoys music in some capacity, so an analysis of something so integrated into society seemed interesting. Our hope is that music trends over time could reveal something about how people have changed over the decades in regards to preference of entertainment. Examining trends overtime may tell us what kind of music people will likely enjoy next.
+Nearly everybody enjoys music in some capacity, so an analysis of something so integrated into society seemed interesting. Our hope is that music trends over time could reveal something about how people have changed over the decades.
 
 ### Questions We Hope to Answer
-- How individual features have changed over time? We plan to plot the following features by year; tempo, duration, loudness, danceability, energy, and whether or not songs are explict. We will plot these trends so we get an idea of which variables are more preferable in music and which are not.
+- How individual features have changed over time? We plan to plot the following features by year; tempo, duration, loudness, danceability, energy, and whether or not songs are explict.
 
 - Are songs more similar or less similar? By creating clusters of songs by decade, we can see if the spread of those clusters changes to be closer together or further apart. 
 
