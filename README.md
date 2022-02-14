@@ -15,6 +15,7 @@ Nearly everybody enjoys music in some capacity, so an analysis of something so i
 
 ### Questions We Hope to Answer
 - How individual features have changed over time? We plan to plot the following features by year; tempo, duration, loudness, danceability, energy, and whether or not songs are explict. We will plot these trends so we get an idea of which variables are more preferable in music and which are not.
+    - By examining the plots, we find there are trends in regards to increasing loudness, decreasing duration, and increasing explicitness of music over the years of 1960-2019.
 
 - Are songs more similar or less similar? By creating clusters of songs by decade, we can see if the spread of those clusters changes to be closer together or further apart. 
 
