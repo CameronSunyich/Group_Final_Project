@@ -28,6 +28,7 @@ We will use a K-means algorithm to cluster our data for trends by decade.
 
 ## Database
 We will be using PostgreSQL to manage our database. 
+Data has been successfully imported into pgAdmin. See attached SQL file for table details. 
 
 ## Presentation
 [Google Slides Presentation](https://docs.google.com/presentation/d/1Zdr2dapoO0zbbEyedpY4m-J9n3LRmr9VZOUt79l3u-4/edit?usp=sharing)
