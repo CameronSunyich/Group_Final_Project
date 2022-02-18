@@ -25,7 +25,10 @@ CREATE TABLE info_by_decade(
 	average_danceability REAL,
 	average_duration REAL,
 	average_energy REAL,
-	average_explicit REAL
+	average_explicit REAL,
+	average_instrumentalness REAL,
+	average_loudness REAL,
+	average_tempo REAL
 );
 
 INSERT INTO info_by_decade(decade)
@@ -218,5 +221,115 @@ FROM music_data
 WHERE year BETWEEN 2010 and 2019)
 WHERE decade = '10s';
 
+--Average instrumentalness
+UPDATE info_by_decade
+SET average_instrumentalness = (SELECT AVG(instrumentalness)
+FROM music_data
+WHERE year BETWEEN 1960 and 1969)
+WHERE decade = '60s';
+
+UPDATE info_by_decade
+SET average_instrumentalness = (SELECT AVG(instrumentalness)
+FROM music_data
+WHERE year BETWEEN 1970 and 1979)
+WHERE decade = '70s';
+
+UPDATE info_by_decade
+SET average_instrumentalness = (SELECT AVG(instrumentalness)
+FROM music_data
+WHERE year BETWEEN 1980 and 1989)
+WHERE decade = '80s';
+
+UPDATE info_by_decade
+SET average_instrumentalness = (SELECT AVG(instrumentalness)
+FROM music_data
+WHERE year BETWEEN 1990 and 1999)
+WHERE decade = '90s';
+
+UPDATE info_by_decade
+SET average_instrumentalness = (SELECT AVG(instrumentalness)
+FROM music_data
+WHERE year BETWEEN 2000 and 2009)
+WHERE decade = '00s';
+
+UPDATE info_by_decade
+SET average_instrumentalness = (SELECT AVG(instrumentalness)
+FROM music_data
+WHERE year BETWEEN 2010 and 2019)
+WHERE decade = '10s';
+
+--Average loudness
+UPDATE info_by_decade
+SET average_loudness = (SELECT AVG(loudness)
+FROM music_data
+WHERE year BETWEEN 1960 and 1969)
+WHERE decade = '60s';
+
+UPDATE info_by_decade
+SET average_loudness = (SELECT AVG(loudness)
+FROM music_data
+WHERE year BETWEEN 1970 and 1979)
+WHERE decade = '70s';
+
+UPDATE info_by_decade
+SET average_loudness = (SELECT AVG(loudness)
+FROM music_data
+WHERE year BETWEEN 1980 and 1989)
+WHERE decade = '80s';
+
+UPDATE info_by_decade
+SET average_loudness = (SELECT AVG(loudness)
+FROM music_data
+WHERE year BETWEEN 1990 and 1999)
+WHERE decade = '90s';
+
+UPDATE info_by_decade
+SET average_loudness = (SELECT AVG(loudness)
+FROM music_data
+WHERE year BETWEEN 2000 and 2009)
+WHERE decade = '00s';
+
+UPDATE info_by_decade
+SET average_loudness = (SELECT AVG(loudness)
+FROM music_data
+WHERE year BETWEEN 2010 and 2019)
+WHERE decade = '10s';
+
+--Average tempo
+UPDATE info_by_decade
+SET average_tempo = (SELECT AVG(tempo)
+FROM music_data
+WHERE year BETWEEN 1960 and 1969)
+WHERE decade = '60s';
+
+UPDATE info_by_decade
+SET average_tempo = (SELECT AVG(tempo)
+FROM music_data
+WHERE year BETWEEN 1970 and 1979)
+WHERE decade = '70s';
+
+UPDATE info_by_decade
+SET average_tempo = (SELECT AVG(tempo)
+FROM music_data
+WHERE year BETWEEN 1980 and 1989)
+WHERE decade = '80s';
+
+UPDATE info_by_decade
+SET average_tempo = (SELECT AVG(tempo)
+FROM music_data
+WHERE year BETWEEN 1990 and 1999)
+WHERE decade = '90s';
+
+UPDATE info_by_decade
+SET average_tempo = (SELECT AVG(tempo)
+FROM music_data
+WHERE year BETWEEN 2000 and 2009)
+WHERE decade = '00s';
+
+UPDATE info_by_decade
+SET average_tempo = (SELECT AVG(tempo)
+FROM music_data
+WHERE year BETWEEN 2010 and 2019)
+WHERE decade = '10s';
 
 SELECT * FROM info_by_decade;
