@@ -11,15 +11,14 @@ By looking at artists who have released songs over multiple decades, we plan on 
 Using unsupervised modeling techniques, we are going to examine clusters of song features by decade to evaluate if songs have become more similar or less similar over time.  
 
 ### Reason for Selecting Topic
-Nearly everybody enjoys music in some capacity, so an analysis of something so integrated into society seemed interesting. Our hope is that music trends over time could reveal something about how people have changed over the decades.
+Nearly everybody enjoys music in some capacity, so an analysis of something so integrated into society seemed interesting. Our hope is that music trends over time could reveal something about how people have changed over the decades. 
 
 ### Questions We Hope to Answer
-- How individual features have changed over time? We plan to plot the following features by year; tempo, duration, loudness, danceability, energy, and whether or not songs are explict.
-    -By examining the plots, we find there are trends in regards to increasing loudness, decreasing duration, and increasing explicitness of music over the years of 1960-2019.
+- How individual features have changed over time? We plan to plot the following features by year; tempo, duration, loudness, danceability, energy, and whether or not songs are explict. 
 
 - Are songs more similar or less similar? By creating clusters of songs by decade, we can see if the spread of those clusters changes to be closer together or further apart. 
 
-- Do trends of individual artists follow trends of individual features? We plan on selecting artists who have released songs in 2 or 3 decades and comparing the individual features of their songs to the individual features of the rest of the songs in the same year to compare if the artist's songs follow a similar trend compared to the rest of the industry. 
+- Do trends of popular songs follow trends of individual features? We plan on selecting the most popular songs in certain decades and comparing the individual features of those songs to the features of the rest of the songs in the same year to compare if the popular songs are noticeably similar to or different from other songs released in the same decade. 
 
 ### Data Source
 [Kaggle Data](https://www.kaggle.com/vatsalmavani/music-recommendation-system-using-spotify-dataset/data)
