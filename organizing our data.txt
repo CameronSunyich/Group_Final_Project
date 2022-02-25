@@ -1,8 +1,0 @@
-Music Reccendation
-- By Genre
-- using a playlist and adding a song based on tempo, bpm, key, etc.
-- artist simularities?
-- limit songs reccomended
-- weigh the data
-- ask class about what they like in songs? (google forum)
-
