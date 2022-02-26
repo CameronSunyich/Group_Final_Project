@@ -1,37 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>How Music Trends Over the Years</title>
-        <script src="https://d3js.org/d3.v5.min.js" defer></script>
-        <script src="https://d3js.org/d3-scale.v3.min.js" defer> </script>
-        <script src="https://d3js.org/d3-axis.v1.min.js"></script>
-        <script src="app.js" defer></script>
-        <style>
-        .rectangle:hover{
-            opacity: 0.66
-        
-        }
-        .bar{
-            fill:blue;    
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How Music Trends have Changed Over the Decades</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
 
-        .label{
-            fill:black
+      #app {
+        display: flex;
+        margin: 2rem 1rem;
+      }
 
-        }
-        </style>
+      #chart {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+        padding: 1rem;
+      }
 
-    </head>
-    <body>
-        <div id="app"></div>
-        <div id ="chart"></div>
-        <div style="text-align: center">
-            <h1>Popularity Through the Decades</h1>
-            <div id="d3-container">
-            <svg>
+      #chart,
+      #data {
+        margin: 0 2rem;
+      }
 
-            </svg>
-            </div>
-        </div>
-    </body>
+      #data ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      #data li {
+        margin-bottom: 1rem;
+        padding: 1rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+        width: 10rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+      }
+
+      .bar {
+        fill: blue;
+      }
+
+      .label {
+        fill: black;
+      }
+    </style>
+    <script src="https://d3js.org/d3.v5.min.js" defer></script>
+    <script src="https://d3js.org/d3-scale.v3.min.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <div id="chart">
+        <svg></svg>
+      </div>
+      <div id="data">
+        <ul></ul>
+      </div>
+    </div>
+  </body>
 </html>
