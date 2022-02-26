@@ -12,14 +12,15 @@ const margin = {top: 50, bottom: 50, left: 50, right: 50};
 const width = 800 - margin.left - margin.right;
 const height = 800 - margin.top - margin.bottom;
 
+let selectedData = populartyBasedOnDecade;
+
 const x = d3.scaleBand().rangeRound([0, width]).padding(0.1);
 const y = d3.scaleLinear().range([height, 0]);
 
 const chartContainer = d3
     .select('svg')
-    .attr('width', width - margin.left - margin.right )
-    .attr('height', height - margin.top - margin.bottom)
-
+    .attr('width', width)
+    .attr('height', height + 50)
     x.domain(populartyBasedOnDecade.map((d)=> d.decade));
     y.domain([0, 100 + 50]);
 
@@ -34,7 +35,7 @@ chart
     function renderChart(){
         chart
         .selectAll('.bar')
-        .data(populartyBasedOnDecade)
+        .data(selectedData, data => data.id)
         .enter()
         .append('rect')
         .classed('bar', true)
@@ -44,8 +45,14 @@ chart
         .attr('y', data => y(data.avgPopularity));
 
         chart
+           .selectAll('.bar')
+           .data(selectedData, data => data.id)
+           .exit()
+           .remove(); 
+
+        chart
         .selectAll('.label')
-        .data(populartyBasedOnDecade)
+        .data(selectedData, data => data.id)
         .enter()
         .append('text').text((data) =>data.avgPopularity)
         .attr('x', data => x(data.decade) + x.bandwidth() / 2)
@@ -53,27 +60,13 @@ chart
         .attr('text-anchor', 'middle')
         .classed('label', true)
 
+        chart
+           .selectAll('.label')
+           .data(selectedData, data => data.id)
+           .exit()
+           .remove(); 
     }
-chart
-    .selectAll('.bar')
-    .data(populartyBasedOnDecade)
-    .enter()
-    .append('rect')
-    .classed('bar', true)
-    .attr('width', x.bandwidth())
-    .attr('height', data => height - y(data.avgPopularity))
-    .attr('x', data => x(data.decade))
-    .attr('y', data => y(data.avgPopularity));
-
-chart
-    .selectAll('.label')
-    .data(populartyBasedOnDecade)
-    .enter()
-    .append('text').text((data) =>data.avgPopularity)
-    .attr('x', data => x(data.decade) + x.bandwidth() / 2)
-    .attr('y', data => y(data.avgPopularity) - 20)
-    .attr('text-anchor', 'middle')
-    .classed('label', true)
+renderChart();
 
 let unselectedIds = [];
 
@@ -99,6 +92,7 @@ listItems
         else{
             unselectedIds = unselectedIds.filter(id => id !== data.id);
         }
-    
+        selectedData = populartyBasedOnDecade.filter((d) => unselectedIds.indexOf(d.id)=== -1);
+
         renderChart();
     });
