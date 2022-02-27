@@ -15,6 +15,7 @@ Nearly everybody enjoys music in some capacity, so an analysis of something so i
 
 ### Questions for our Dataset
 - How individual features have changed over time? We plan to plot the following features by year; tempo, duration, loudness, danceability, energy, and whether or not songs are explict.
+
     -By examining the plots, we find there are trends in regards to increasing loudness, decreasing duration, and increasing explicitness of music over the years of 1960-2019.
 
 - Are songs more similar or less similar? By creating clusters of songs by decade, we can see if the spread of those clusters changes to be closer together or further apart. 
@@ -39,4 +40,4 @@ Data has been successfully imported into pgAdmin. See attached SQL file for tabl
 [Google Slides Presentation](https://docs.google.com/presentation/d/1Zdr2dapoO0zbbEyedpY4m-J9n3LRmr9VZOUt79l3u-4/edit?usp=sharing)
 
 ## Dashboard
-[Dashboard](link)
+[Dashboard](https://public.tableau.com/app/profile/cameron.sunyich/viz/SpotifyMusicTrends_16459391586170/FeaturesandPopularArtistbytheDecade?publish=yes)
