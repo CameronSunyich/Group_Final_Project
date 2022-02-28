@@ -41,8 +41,10 @@ Data has been successfully imported into pgAdmin and connected to Jupyter Notebo
 
 ### Dashboard
 [Dashboard](link)
+
 Tableau dashboard is being used to create a dashboard.
 
 ### Interactive Website
 [Website](link)
+
 A D3 interactive site is being deployed to select a decade to see relevant graphs. 
