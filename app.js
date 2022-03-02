@@ -39,6 +39,7 @@ chart
         .enter()
         .append('rect')
         .classed('bar', true)
+        .attr('id',data =>data.id)
         .attr('width', x.bandwidth())
         .attr('height', data => height - y(data.avgPopularity))
         .attr('x', data => x(data.decade))
@@ -95,4 +96,7 @@ listItems
         selectedData = populartyBasedOnDecade.filter((d) => unselectedIds.indexOf(d.id)=== -1);
 
         renderChart();
+    });
+d3.selectAll('.bar').on('click', function() {
+        console.log(this.id)
     });
