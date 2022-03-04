@@ -98,5 +98,166 @@ listItems
         renderChart();
     });
 d3.selectAll('.bar').on('click', function() {
-        console.log(this.id)
+    console.log(this.id)
+    image = d3.select("#img1");
+    barSelected = this.id;
+    if (barSelected == 1) {
+       image.attr("src", "./Resource/Images/60s_graphs/explicit.PNG");
+    } else if (barSelected == 2) {
+       image.attr("src", "./Resource/Images/70s_graphs/explicit.PNG");
+        }
+    else if (barSelected == 3) {
+    image.attr("src", "./Resource/Images/80s_graphs/explicit.PNG");
+        }
+    else if (barSelected == 4) {
+    image.attr("src", "./Resource/Images/90s_graphs/explicit.PNG");
+        }
+    else if (barSelected == 5) {
+        image.attr("src", "./Resource/Images/00s_graphs/explicit.PNG");
+        }
+    else if (barSelected == 6) {
+        image.attr("src", "./Resource/Images/10s_graphs/explicit.PNG");
+        }
+
+    image = d3.select("#img2");
+    barSelected = this.id;
+    if (barSelected == 1) {
+           image.attr("src", "./Resource/Images/60s_graphs/energy.PNG");
+    } else if (barSelected == 2) {
+           image.attr("src", "./Resource/Images/70s_graphs/energy.PNG");
+            }
+    else if (barSelected == 3) {
+        image.attr("src", "./Resource/Images/80s_graphs/energy.PNG");
+            }
+    else if (barSelected == 4) {
+        image.attr("src", "./Resource/Images/90s_graphs/energy.PNG");
+            }
+    else if (barSelected == 5) {
+            image.attr("src", "./Resource/Images/00s_graphs/energy.PNG");
+            }
+    else if (barSelected == 6) {
+            image.attr("src", "./Resource/Images/10s_graphs/energy.PNG");
+            }
+    
+    image = d3.select("#img3");
+    barSelected = this.id;
+    if (barSelected == 1) {
+        image.attr("src", "./Resource/Images/60s_graphs/popularity.PNG");
+    } else if (barSelected == 2) {
+        image.attr("src", "./Resource/Images/70s_graphs/popularity.PNG");
+        }
+    else if (barSelected == 3) {
+        image.attr("src", "./Resource/Images/80s_graphs/popularity.PNG");
+        }
+    else if (barSelected == 4) {
+        image.attr("src", "./Resource/Images/90s_graphs/popularity.PNG");
+        }
+    else if (barSelected == 5) {
+        image.attr("src", "./Resource/Images/00s_graphs/popularity.PNG");
+        }
+    else if (barSelected == 6) {
+        image.attr("src", "./Resource/Images/10s_graphs/popularity.PNG");
+        }
+        
+    image = d3.select("#img4");
+        barSelected = this.id;
+    if (barSelected == 1) {
+        image.attr("src", "./Resource/Images/60s_graphs/loudness.PNG");
+    } else if (barSelected == 2) {
+        image.attr("src", "./Resource/Images/70s_graphs/loudness.PNG");
+        }
+    else if (barSelected == 3) {
+        image.attr("src", "./Resource/Images/80s_graphs/loudness.PNG");
+            }
+    else if (barSelected == 4) {
+        image.attr("src", "./Resource/Images/90s_graphs/loudness.PNG");
+            }
+    else if (barSelected == 5) {
+        image.attr("src", "./Resource/Images/00s_graphs/loudness.PNG");
+        }
+    else if (barSelected == 6) {
+        image.attr("src", "./Resource/Images/10s_graphs/loudness.PNG");
+        }
+        image = d3.select("#img5");
+        barSelected = this.id;
+        if (barSelected == 1) {
+           image.attr("src", "./Resource/Images/60s_graphs/tempo.PNG");
+        } else if (barSelected == 2) {
+           image.attr("src", "./Resource/Images/70s_graphs/tempo.PNG");
+            }
+        else if (barSelected == 3) {
+        image.attr("src", "./Resource/Images/80s_graphs/tempo.PNG");
+            }
+        else if (barSelected == 4) {
+        image.attr("src", "./Resource/Images/90s_graphs/tempo.PNG");
+            }
+        else if (barSelected == 5) {
+            image.attr("src", "./Resource/Images/00s_graphs/tempo.PNG");
+            }
+        else if (barSelected == 6) {
+            image.attr("src", "./Resource/Images/10s_graphs/tempo.PNG");
+            }
+    
+        image = d3.select("#img6");
+        barSelected = this.id;
+        if (barSelected == 1) {
+               image.attr("src", "./Resource/Images/60s_graphs/duration.PNG");
+        } else if (barSelected == 2) {
+               image.attr("src", "./Resource/Images/70s_graphs/duration.PNG");
+                }
+        else if (barSelected == 3) {
+            image.attr("src", "./Resource/Images/80s_graphs/duration.PNG");
+                }
+        else if (barSelected == 4) {
+            image.attr("src", "./Resource/Images/90s_graphs/duration.PNG");
+                }
+        else if (barSelected == 5) {
+                image.attr("src", "./Resource/Images/00s_graphs/duration.PNG");
+                }
+        else if (barSelected == 6) {
+                image.attr("src", "./Resource/Images/10s_graphs/duration.PNG");
+                }
+        
+        image = d3.select("#img7");
+        barSelected = this.id;
+        if (barSelected == 1) {
+            image.attr("src", "./Resource/Images/60s_graphs/danceability.PNG");
+        } else if (barSelected == 2) {
+            image.attr("src", "./Resource/Images/70s_graphs/danceability.PNG");
+            }
+        else if (barSelected == 3) {
+            image.attr("src", "./Resource/Images/80s_graphs/danceability.PNG");
+            }
+        else if (barSelected == 4) {
+            image.attr("src", "./Resource/Images/90s_graphs/danceability.PNG");
+            }
+        else if (barSelected == 5) {
+            image.attr("src", "./Resource/Images/00s_graphs/danceability.PNG");
+            }
+        else if (barSelected == 6) {
+            image.attr("src", "./Resource/Images/10s_graphs/danceability.PNG");
+            }
+            
+        image = d3.select("#img8");
+            barSelected = this.id;
+        if (barSelected == 1) {
+            image.attr("src", "./Resource/Images/60s_graphs/acousticness.PNG");
+        } else if (barSelected == 2) {
+            image.attr("src", "./Resource/Images/70s_graphs/acousticness.PNG");
+            }
+        else if (barSelected == 3) {
+            image.attr("src", "./Resource/Images/80s_graphs/acousticness.PNG");
+                }
+        else if (barSelected == 4) {
+            image.attr("src", "./Resource/Images/90s_graphs/acousticness.PNG");
+                }
+        else if (barSelected == 5) {
+            image.attr("src", "./Resource/Images/00s_graphs/acousticness.PNG");
+            }
+        else if (barSelected == 6) {
+            image.attr("src", "./Resource/Images/10s_graphs/acousticness.PNG");
+            }
+
+
     });
+
