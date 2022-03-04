@@ -40,11 +40,11 @@ Data has been successfully imported into pgAdmin and connected to Jupyter Notebo
 [Google Slides Presentation](https://docs.google.com/presentation/d/1Zdr2dapoO0zbbEyedpY4m-J9n3LRmr9VZOUt79l3u-4/edit?usp=sharing)
 
 ### Dashboard
-[Dashboard](link)
+[Dashboard](https://public.tableau.com/app/profile/cameron.sunyich/viz/SpotifyMusicTrends_16459391586170/FeaturesandPopularArtistbytheDecade?publish=yes)
 
 Tableau dashboard is being used to create a dashboard.
 
 ### Interactive Website
-[Website](link)
+[Website](https://natenewland.github.io/Website_Music_Data/)
 
 A D3 interactive site is being deployed to select a decade to see relevant graphs. 
