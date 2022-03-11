@@ -28,6 +28,10 @@ This [data](https://www.kaggle.com/vatsalmavani/music-recommendation-system-usin
 
 The original data included songs from 1921-2020, and has measures for a variety of song features. We decided to examine songs from 1960-2019 and focused on tempo, duration, loudness, danceability, energy, acousticness, and whether or not a song is explicit.
 
+## Jupyter Notebook to Graph Trends
+We used Jupyter notebook and the matplotlib library to graph our trends by each element. Graphs were created by taking the averages of each decade to show the trends clearly.
+    For ex: We took the average tempo in each decade and plot those averages to show a trend.
+
 ## Machine Learning Model
 We used a K-means algorithm to cluster our data. Using three principal components and five classes, our data grouped songs based on year, acousticness, danceability, duration, energy, explicit, instrumentalness, loudness, popularity, and tempo. Clusters were used in order to determine song similarity. This was the best way to determine groups of songs and see what combinations of features are common and make songs more or less similar. Three principal components were selected based on the Elbow Curve. 
 
