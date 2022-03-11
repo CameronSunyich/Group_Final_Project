@@ -1,0 +1,12 @@
+	When it comes to how I contributed to our project I belive that we all did a great job with communicating very well and knowing what was expected of us.
+I feel we were all a little stressed about how much time we had. Alex and I spear-headed the project and provided a lot of structure for us. Personally I big challenge
+for me was feeling like I didn't have the time to get the project done, and became a little frustrated. I was able to fix this by sitting down and doing more and more of
+the things I felt we needed but wasn't necessarily talked about. I fully developed our website with some help from Jacob and Hammad.
+
+	We did very well with communication. By using Slack as our life line and having slack downloaded on my phone I was able to see Updates of where everyone was 
+even if I wasn't at home. I think what I would do differently is maybe more updates on what you have done so far and even if help is needed. If I could give any tips for
+someone picking up where we left off is to pull data like youtube plays or soundcloud. With more data there might be more of a trend.
+
+	Our project was pretty simple. We wanted to determine if there are any trends in music and if they are what makes songs listened to. In short with the data we had
+we found that the significant factor to popularity was actually the year the song was released. We used a simple Machine Learning program to group the different songs into
+classes using all the elements of a song. We noticed as songs became newer they tended to perform better on the charts.
